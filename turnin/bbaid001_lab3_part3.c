@@ -17,6 +17,7 @@ int main(void) {
     	DDRB = 0x00; PORTB = 0xFF;
    	DDRC = 0xFF; PORTC = 0x00;
 	unsigned char fuel = 0x00;
+	unsigned char seatbelt = 0x00;
 	while (1) {
 		fuel = (PINA & 0x0F);
 		seatbelt = (PINA & 0xF0);

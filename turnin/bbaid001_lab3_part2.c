@@ -68,7 +68,7 @@ int main(void) {
 			PORTC =0x3F;
 		}
 		else {
-			PORC = 70;
+			PORTC = 0x70;
 		}
    	}
    	return 1;

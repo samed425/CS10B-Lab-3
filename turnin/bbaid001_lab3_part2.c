@@ -71,6 +71,6 @@ int main(void) {
 			PORTC = 0x70;
 		}
    	}
-   	return 1;
 
+   	return 1;
 }

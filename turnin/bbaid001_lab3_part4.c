@@ -15,12 +15,14 @@
 int main(void) {
     	DDRA = 0x00; PORTA = 0xFF;
     	DDRB = 0xFF; PORTB = 0x00;
+	DDRC = 0xFF; PORTC = 0x00;
 	unsigned char tmp0;
 	unsigned char tmp1;
 	while (1) {
 		tmp0 = (0x0F & PORTA) << 4;
 		tmp1 = (0xF0 & PORTA) >> 4;
-		PORTB = (tmp0 | tmp1);
+		PORTB = tmp1;
+		PORTC = tmp0;
    	}
 
    	return 1;

@@ -67,6 +67,9 @@ int main(void) {
 		else if (fuel == 0x0F) {
 			PORTC =0x3F;
 		}
+		else {
+			PORC = 70;
+		}
    	}
    	return 1;
 

@@ -23,11 +23,11 @@ int main(void) {
 			tmp = 0x02;
 		}
 
-		else if ((sensor < 70) && (sensor > 5)){
+		else if ((wgt < 70) && (wgt > 5)){
 			tmp = 0x04;
 		}
 
-		else if ((wgt <= 5) && (sensor >= 0)) {
+		else if ((wgt <= 5) && (wgt >= 0)) {
 			tmp = 0x00;
 		}
 		PORTB = tmp;
